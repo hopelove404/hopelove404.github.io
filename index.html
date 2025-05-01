@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Welcome here">
+<meta property="og:type" content="website">
+<meta property="og:title" content="沉思录">
+<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:site_name" content="沉思录">
+<meta property="og:description" content="Welcome here">
+<meta property="og:locale">
+<meta property="article:author" content="Lawrence Lee">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh'
+  };
+</script>
+
+  <title>沉思录</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">沉思录</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">走向极地，走向清凉</p>
+      <a>
+        <img class="custom-logo-image" src="/uploads/logo.jpg" alt="沉思录">
+      </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>Archives</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/30/%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8EDocker%E9%83%A8%E7%BD%B2StarRocks/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lawrence Lee">
+      <meta itemprop="description" content="Welcome here">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="沉思录">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/30/%E5%A6%82%E4%BD%95%E5%9F%BA%E4%BA%8EDocker%E9%83%A8%E7%BD%B2StarRocks/" class="post-title-link" itemprop="url">如何基于Docker部署StarRocks</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-04-30 18:41:57" itemprop="dateCreated datePublished" datetime="2025-04-30T18:41:57+08:00">2025-04-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2025-05-01 15:54:18" itemprop="dateModified" datetime="2025-05-01T15:54:18+08:00">2025-05-01</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>近期我们的一个BI数据产品在合作伙伴的私有化部署实践中，我们遇到了一个具有代表性的技术挑战：合作伙伴的基础设施采用基于openEuler的一体机架构，需要将包含StarRocks的全套数据分析组件进行容器化封装部署。由于官方文档存在以下痛点：</p>
+<ol>
+<li>服务组件说明分散（FE&#x2F;BE节点配置分离）</li>
+<li>容器化部署路径不明确</li>
+<li>缺少典型问题解决方案</li>
+</ol>
+<p>本文将通过完整的实战记录，详解基于Docker的企业级StarRocks部署方案。</p>
+<h2 id="容器化部署全流程"><a href="#容器化部署全流程" class="headerlink" title="容器化部署全流程"></a>容器化部署全流程</h2><h3 id="1-镜像准备与优化"><a href="#1-镜像准备与优化" class="headerlink" title="1. 镜像准备与优化"></a>1. 镜像准备与优化</h3><h4 id="1-1-镜像加速配置（国内环境推荐）"><a href="#1-1-镜像加速配置（国内环境推荐）" class="headerlink" title="1.1 镜像加速配置（国内环境推荐）"></a>1.1 镜像加速配置（国内环境推荐）</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 创建或更新Docker守护进程配置</span></span><br><span class="line"><span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/docker/daemon.json &lt;&lt;-<span class="string">&#x27;EOF&#x27;</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="string">&quot;registry-mirrors&quot;</span>: [</span><br><span class="line">    <span class="string">&quot;https://registry.docker-cn.com&quot;</span>,</span><br><span class="line">    <span class="string">&quot;http://hub-mirror.c.163.com&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://docker.mirrors.ustc.edu.cn&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://docker.m.daocloud.io&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://dockerproxy.com&quot;</span>,</span><br><span class="line">    <span class="string">&quot;https://docker.nju.edu.cn&quot;</span></span><br><span class="line">  ],</span><br><span class="line">  <span class="string">&quot;log-driver&quot;</span>: <span class="string">&quot;json-file&quot;</span>,</span><br><span class="line">  <span class="string">&quot;log-opts&quot;</span>: &#123;</span><br><span class="line">    <span class="string">&quot;max-size&quot;</span>: <span class="string">&quot;10m&quot;</span>,</span><br><span class="line">    <span class="string">&quot;max-file&quot;</span>: <span class="string">&quot;3&quot;</span></span><br><span class="line">  &#125;,</span><br><span class="line">  <span class="string">&quot;storage-driver&quot;</span>: <span class="string">&quot;overlay2&quot;</span>,</span><br><span class="line">  <span class="string">&quot;insecure-registries&quot;</span>: [],</span><br><span class="line">  <span class="string">&quot;data-root&quot;</span>: <span class="string">&quot;/var/lib/docker&quot;</span></span><br><span class="line">&#125;</span><br><span class="line">EOF</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-2-镜像选择策略"><a href="#1-2-镜像选择策略" class="headerlink" title="1.2 镜像选择策略"></a>1.2 镜像选择策略</h4><p>在镜像选型过程中，观察到StarRocks官方推荐的allin1-ubuntu镜像具有最高下载量。针对Docker镜像的跨平台特性，了解到allin1-ubuntu的命名源于镜像内部集成的是Ubuntu用户空间环境（包含apt包管理、系统工具链等），而非要求必须部署在Ubuntu宿主机上。</p>
+<p>这也就意味着CentOS&#x2F;openEuler 操作系统上也可以采用starrocks&#x2F;allin1-ubuntu，选对对应的tag即可.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker pull starrocks/allin1-ubuntu:3.1.14</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>执行完毕，稍等一会，因为镜像本身比较大.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root@iZ2ze8dvta0psx9lf45hk2Z]# docker images</span><br><span class="line">REPOSITORY       TAG            IMAGE ID       CREATED        SIZE</span><br><span class="line">starrocks/allin1-ubuntu   3.1.14         b15dd4d85c19   9 months ago   4.36GB</span><br></pre></td></tr></table></figure>
+<h3 id="2-服务启动与验证"><a href="#2-服务启动与验证" class="headerlink" title="2. 服务启动与验证"></a>2. 服务启动与验证</h3><h4 id="2-1-容器初始化命令"><a href="#2-1-容器初始化命令" class="headerlink" title="2.1 容器初始化命令"></a>2.1 容器初始化命令</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">docker run -d --name starrocks \</span><br><span class="line">  -p 9030:9030 \    # FE查询服务端口</span><br><span class="line">  -p 8030:8030 \    # FE HTTP接口</span><br><span class="line">  -p 8040:8040 \    # BE HTTP服务端口</span><br><span class="line">  --security-opt seccomp=unconfined \</span><br><span class="line">  --ulimit nofile=65536:65536 \  # 文件描述符优化</span><br><span class="line">  -v /data/starrocks/fe:/data/deploy/starrocks/fe \ # 持久化存储：挂载数据卷保证容灾能力</span><br><span class="line">  -v /data/starrocks/be:/data/deploy/starrocks/be \</span><br><span class="line">  starrocks/allin1-ubuntu:3.1.14</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h4 id="2-2-服务健康检查"><a href="#2-2-服务健康检查" class="headerlink" title="2.2 服务健康检查"></a>2.2 服务健康检查</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># 检查容器状态</span><br><span class="line">docker ps -a --filter name=starrocks</span><br><span class="line"></span><br><span class="line"># 实时查看启动日志</span><br><span class="line">docker logs -f starrocks</span><br></pre></td></tr></table></figure>
+
+<p>启动完毕，尝试通过mysql客户端连接9030端口。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysql -h 127.0.0.1 -P 9030 -uroot</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="3-典型问题排查"><a href="#3-典型问题排查" class="headerlink" title="3. 典型问题排查"></a>3. 典型问题排查</h3><h4 id="3-1-服务端口不可用"><a href="#3-1-服务端口不可用" class="headerlink" title="3.1 服务端口不可用"></a>3.1 服务端口不可用</h4><p>启动过程中，日志一直提醒FE service query port:9030 is NOT alive.</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">2025-04-29 14:16:10 2025-04-29 05:16:10+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:12 2025-04-29 05:16:12,355 INFO exited: feservice (exit status 255; not expected)</span><br><span class="line">2025-04-29 14:16:12 2025-04-29 05:16:12+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:12 2025-04-29 05:16:12,832 INFO gave up: feservice entered FATAL state, too many start retries too quickly</span><br><span class="line">2025-04-29 14:16:14 2025-04-29 05:16:14+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:16 2025-04-29 05:16:16+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:18 2025-04-29 05:16:18+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:20 2025-04-29 05:16:20+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:22 2025-04-29 05:16:22+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:24 2025-04-29 05:16:24+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br><span class="line">2025-04-29 14:16:27 2025-04-29 05:16:27+00:00 WARN FE service query port:9030 is NOT alive yet!</span><br></pre></td></tr></table></figure>
+
+<p>问题排查：</p>
+<p>attach到 docker image 内部，看看具体fe服务启动发生了什么异常。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker ps -a</span><br><span class="line"></span><br><span class="line"># 进入容器调试环境</span><br><span class="line">docker exec -it starrocks /bin/bash</span><br><span class="line"></span><br><span class="line"># 查看FE日志（关键路径）</span><br><span class="line">tail -n 100 /data/deploy/starrocks/fe/log/fe.log</span><br></pre></td></tr></table></figure>
+
+<p>果然发现问题，原来是磁盘空间不足。</p>
+<p><img src="/images/StarRocks_OutOfDiskLog.jpg" alt="磁盘日志异常" title="磁盘日志异常"></p>
+<p>查看磁盘占用信息：<br><img src="/images/StarRocks_DiskUsage.jpg" alt="磁盘占用信息" title="磁盘占用信息"></p>
+<h4 id="3-2-常见问题根源："><a href="#3-2-常见问题根源：" class="headerlink" title="3.2 常见问题根源："></a>3.2 常见问题根源：</h4><ul>
+<li>存储空间不足（日志文件路径：&#x2F;data&#x2F;deploy）</li>
+<li>内存分配异常（建议容器内存≥4GB）</li>
+<li>端口冲突（检查宿主机的8030&#x2F;9030端口占用）</li>
+</ul>
+<h3 id="4-安全加固与数据导入"><a href="#4-安全加固与数据导入" class="headerlink" title="4. 安全加固与数据导入"></a>4. 安全加固与数据导入</h3><h4 id="4-1-账户安全配置："><a href="#4-1-账户安全配置：" class="headerlink" title="4.1 账户安全配置："></a>4.1 账户安全配置：</h4><p>默认StarRocks root用户是没有密码的，用起来会很不方便，也不安全。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">宿主机执行：</span><br><span class="line">mysql -h 127.0.0.1 -P9030 -uroot</span><br><span class="line"> </span><br><span class="line">然后将root用户密码设置一下：</span><br><span class="line">alter USER &#x27;root&#x27; IDENTIFIED BY &#x27;root&#x27;;</span><br></pre></td></tr></table></figure>
+
+<p>创建数据库和对应表后，就可以进行数据导入了。</p>
+<h4 id="4-2-高效数据加载方案"><a href="#4-2-高效数据加载方案" class="headerlink" title="4.2 高效数据加载方案"></a>4.2 高效数据加载方案</h4><p>采用Stream Load实现TB级数据高效导入，不依赖外部组件。方便快捷。</p>
+<p><a target="_blank" rel="noopener" href="https://docs.starrocks.io/zh/docs/3.2/loading/Stream_Load_transaction_interface/">https://docs.starrocks.io/zh/docs/3.2/loading/Stream_Load_transaction_interface/</a></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">curl --location-trusted -u root:root \</span><br><span class="line">    -H &quot;Expect:100-continue&quot; \</span><br><span class="line">    -H &quot;timeout:100&quot; \</span><br><span class="line">    -H &quot;max_filter_ratio:0.2&quot; \</span><br><span class="line">    -H &quot;column_separator:,&quot; \</span><br><span class="line">    -H &quot;skip_header:1&quot; \</span><br><span class="line">    -T reviews.csv -XPUT \</span><br><span class="line">    http://$&#123;BE_IP&#125;:8040/api/retail_online/reviews/_stream_load</span><br></pre></td></tr></table></figure>
+<p>注意，这里的端口8040为Be服务的Http端口.</p>
+<p>关键参数说明：</p>
+<table>
+<thead>
+<tr>
+<th>参数名</th>
+<th>功能说明</th>
+<th>推荐值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>max_filter_ratio</td>
+<td>允许的数据过滤比例</td>
+<td>0.1-0.3</td>
+</tr>
+<tr>
+<td>timeout</td>
+<td>超时控制（秒）</td>
+<td>≥300</td>
+</tr>
+<tr>
+<td>exec_mem_limit</td>
+<td>单次导入内存限制（MB）</td>
+<td>≥2048</td>
+</tr>
+</tbody></table>
+<p>成功后会输出结果:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    &quot;TxnId&quot;: 4,</span><br><span class="line">    &quot;Label&quot;: &quot;7a9798c6-b31c-41e4-a335-a3612e846ed0&quot;,</span><br><span class="line">    &quot;Status&quot;: &quot;Success&quot;,</span><br><span class="line">    &quot;Message&quot;: &quot;OK&quot;,</span><br><span class="line">    &quot;NumberTotalRows&quot;: 8,</span><br><span class="line">    &quot;NumberLoadedRows&quot;: 8,</span><br><span class="line">    &quot;NumberFilteredRows&quot;: 0,</span><br><span class="line">    &quot;NumberUnselectedRows&quot;: 0,</span><br><span class="line">    &quot;LoadBytes&quot;: 1483,</span><br><span class="line">    &quot;LoadTimeMs&quot;: 32,</span><br><span class="line">    &quot;BeginTxnTimeMs&quot;: 1,</span><br><span class="line">    &quot;StreamLoadPlanTimeMs&quot;: 3,</span><br><span class="line">    &quot;ReadDataTimeMs&quot;: 0,</span><br><span class="line">    &quot;WriteDataTimeMs&quot;: 12,</span><br><span class="line">    &quot;CommitAndPublishTimeMs&quot;: 16</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/30/hello-world/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lawrence Lee">
+      <meta itemprop="description" content="Welcome here">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="沉思录">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/30/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+
+              <time title="Created: 2025-04-30 16:36:51" itemprop="dateCreated datePublished" datetime="2025-04-30T16:36:51+08:00">2025-04-30</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Lawrence Lee</p>
+  <div class="site-description" itemprop="description">Welcome here</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">2</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="mailto:lawrence.lee@aliyun.com" title="E-Mail → mailto:lawrence.lee@aliyun.com" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2025</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lawrence Lee</span>
+</div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
