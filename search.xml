@@ -125,7 +125,6 @@
 <h4 id="​​问题原因​​"><a href="#​​问题原因​​" class="headerlink" title="​​问题原因​​"></a>​​问题原因​​</h4><p>错误提示 ​​Plugin [analysis-ik] was built for Elasticsearch version 8.4.1 but version 8.14.2 is running​​ 表示 IK 分词器插件版本与当前 Elasticsearch 版本不兼容。</p>
 <p>主要原因为​版本差异过大​或更新滞后​：IK 插件版本（8.4.1）远低于 Elasticsearch 版本（8.14.2），导致版本校验失败 。</p>
 <h4 id="解决方式"><a href="#解决方式" class="headerlink" title="解决方式"></a>解决方式</h4><p>可以采用离线安装，修改 IK 插件配置文件适配当前版本​​，适用于​已有接近版本的 IK 插件（如 8.10.4），需快速适配 8.14.2。</p>
-<p>​</p>
 <h3 id="离线安装"><a href="#离线安装" class="headerlink" title="离线安装"></a>离线安装</h3><p>在线安装经常会因为网络问题导致插件下载失败，所以可以采取离线安装。</p>
 <p>​下载插件​​：从 IK 官方仓库或其他仓库（<a href="https://release.infinilabs.com/%EF%BC%89">https://release.infinilabs.com/）</a> 下载与 Elasticsearch 版本最接近的插件（如 8.10.4）。</p>
 <h4 id="版本匹配"><a href="#版本匹配" class="headerlink" title="版本匹配"></a>版本匹配</h4><p>如果插件版本和Elastic-Search版本一致，则可复制到plugin目录下或者使用elasticsearch-plugin进行安装。</p>
