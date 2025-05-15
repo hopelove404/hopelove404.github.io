@@ -189,6 +189,92 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/05/15/%E8%BD%AF%E8%80%83%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E8%AE%BA%E6%96%87%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E5%86%99/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lawrence Lee">
+      <meta itemprop="description" content="Welcome here">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="沉思录">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/05/15/%E8%BD%AF%E8%80%83%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88%E8%AE%BA%E6%96%87%E5%BA%94%E8%AF%A5%E5%A6%82%E4%BD%95%E5%86%99/" class="post-title-link" itemprop="url">软考系统架构师论文应该如何写?</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2025-05-15 18:48:54 / Modified: 18:53:19" itemprop="dateCreated datePublished" datetime="2025-05-15T18:48:54+08:00">2025-05-15</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>又到一年软考季，在小红书上发了一篇系统架构师的论文经验心得，不少人问要论文模板，也有同学想让帮忙改进自己写的准备论文。于是趁此机会整理进行了整理。</p>
+<p>24年5月参加了软考系统架构师考试。架构师证书，要说有用，说起来也没什么用处。要说没用，但每年考的人还不少，且通过率也不高。至于我为什么参加这个考试，倒也没有别的初衷。一方面看到20%左右的通过率想挑战一下自己试试，另一方面自己之前工作的title便是架构师，然这只是一个名号罢了，不过如果有了一个证书，也可以调侃称自己是持证上岗了，出去江湖行走，说出去也更有底气一些哈哈。</p>
+<p>客观选择题倒还好，主要涉及操作系统、系统架构、软件工程、数据库等方面的知识，考前通过小程序刷题掌握了七七八八。案例和工作中的实际内容关系也比较大，一个必选，另外四选二，相对容易地拿下。唯独论文，2800字的长篇让我考前如临大敌，考中几度想要中途放弃 考后犹感劫后余生。</p>
+<p>平时时间都看客观题了，准备论文的时候已经没有几天。考前准备了两篇完整论文，分别是云原生架构和架构风格。大数据架构让AI给生成了一份，但并没有太多关注或者去背下来。考试是论文是四选一，万万没想到，恰好有一个就是大数据Lambda架构，相对于单元测试之类的，只能说大数据这个还相对好写一些，毕竟之前工作和数据团队对接比较多，大概也知道他们的处理流程，硬着头皮上吧。</p>
+<p>写的过程中可谓是绞尽脑汁，写一会就想统计一下当前章节的字数，郁闷怎么字数还凑不够，发愁怎么写上更多冗余的废话以填充空白的答卷。刚写到正文就时间过半，此时脑袋空空，要不是考场不让提前交卷自己肯定就跑路了。心下已准备好背水一战大不了下次重新来过，突然也就静了下来，把自己想到的对应技术细节和实践经验疯狂码字，正文写完两段感觉有戏，然后有的没的全都往上怼，最终在考前几分钟得以完成。然后回看自己的论文，感觉还挺满意。说是作家看自己的作品都像是看自己的孩子，自己当时好像也是有这种感觉。</p>
+<p>下面介绍一下论文的建议层次结构和值得强调的事项。</p>
+<h2 id="论文的建议整体结构"><a href="#论文的建议整体结构" class="headerlink" title="论文的建议整体结构"></a>论文的建议整体结构</h2><p>文章结构可以分为如下5个部分，每个部分确定好大概字数。摘要(300字)、背景(300字)、过渡(200字)、正文(1700字)、结尾(200字)</p>
+<ul>
+<li>摘要部分简明概述整个项目的背景、目标、项目关键成果。</li>
+<li>背景部分应进一步展开项目背景，问题与挑战，架构的选择理由和必要性。</li>
+<li>过渡部分可以简要总结架构或风格的特点，并自然引入其在项目中的具体实施。</li>
+<li>正文部分详细阐述架构的各层设计及实现细节。</li>
+<li>结尾总结项目带来的成效，并展望未来的改进方向。可以包括在实际操作中的优化空间及未来计划，以增强论文的深度和展望性。</li>
+</ul>
+<h2 id="几个值得关注和强调的点"><a href="#几个值得关注和强调的点" class="headerlink" title="几个值得关注和强调的点"></a>几个值得关注和强调的点</h2><ul>
+<li>尽量让你写的项目看起来足够真实。很多同学担心自己的项目经验不够丰富，其实大家无论是微服务架构、lambda架构、软件架构风格等等，其实都可以灵活处理，把一个项目从不同的角度去阐述，也就形成了不同的论文，只是着重点不同而已。</li>
+<li>务必确保整体行文的层次和结构，让阅卷人一眼就找到自己的关注点。杂乱无章东一榔头西一棒追看起来很头疼。</li>
+<li>多准备几篇，考试的场景会比你线下写论文要紧张得多，多准备多输入方能下笔如有神。</li>
+<li>很多软考论文都是泛泛而谈，空洞无物，考官难以产生共鸣。但如果论文确实结合了实际项目，融入了一些具体细节，多讲一些遇到的问题、具体方案以及如何处理，比如“基于Canal采用Kafka传输binlog变更数据”这种落地细节替代的空泛的”消息队列“，这样论文就更加立体鲜活，相比空洞的理论，这会为你的文章增色不少，如果阅卷人有实际项目经验，也更容易引起共鸣。</li>
+<li>技术细节与业务价值结合​​：我们做架构终究是服务于业务，解决业务问题的。因此在论文中时刻要谨记，阐述你的技术决策和架构方案，务必要体现其业务价值。不仅是在背景和正文中，甚至在每个子模块中都要有对应呈现。 </li>
+<li>问题导向论证：在背景里阐述了问题和挑战，在正文中要有回应。比如大数据架构“传统架构无法满足实时分析”，那么正文中则需要采用”Spark Streaming&#x2F;Flink 处理实时订单”等技术选型来进行呼应。一咏三叹，不断论证你的架构是如何解决技术问题和业务问题的。</li>
+<li>项目的结果要能够量化，这样才有说服力。比如”运营决策效率大大提升”就是定性，但缺乏数据支持，不足以让人产生信任感。 ”2024年3月上线后运营决策效率提升40%“，说服力就得到了增强。</li>
+</ul>
+<h2 id="项目成果的定量和定性"><a href="#项目成果的定量和定性" class="headerlink" title="项目成果的定量和定性"></a>项目成果的定量和定性</h2><ul>
+<li>量化指标可以是基础性能提升(TPS从1千→2万)、业务价值(审核流程平均耗时从3天→1.8天)、成本效益(服务器费用月均节省23万元)、风险控制(全年P3以上故障时间＜8分钟)。</li>
+<li>如果有时候成果不好定量，则可以进行适当包装，比如客户满意度可以表述为【公司因该项目获得客户”年度最佳合作伙伴” 】；集团表彰可以说自己子公司因此获得集团”数字化转型标杆案例” ；也可以提​方法论输出，比如项目经验经过提炼而在集团内部推广至12个子公司；专利沉淀可以说已经申请3项技术发明专利。</li>
+</ul>
+<p>总之，结果一定要能够可衡量，不好衡量也要有佐证，来显示项目的积极效果和业务价值。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/05/06/%E5%9F%BA%E4%BA%8EDocker%E9%83%A8%E7%BD%B2ElasticSearch%E4%BB%A5%E5%8F%8A%E5%88%86%E8%AF%8D%E6%8F%92%E4%BB%B6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -554,12 +640,12 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">4</span>
+        <span class="site-state-item-count">7</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
